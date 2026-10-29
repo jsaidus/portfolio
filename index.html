@@ -413,79 +413,151 @@
                 <div class="eyebrow">Source code & documentation</div>
                 <h2>GitHub project showcase</h2>
                 <div class="notice">
-  <strong>GitHub Profile:</strong>
-  <a href="https://github.com/jsaidus" target="_blank" rel="noopener noreferrer">github.com/jsaidus</a>
-</div>
+                    <strong>GitHub Profile:</strong>
+                    <a href="https://github.com/jsaidus" target="_blank"
+                        rel="noopener noreferrer">github.com/jsaidus</a>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="experience">
+            <div class="container split">
+                <div>
+                    <div class="eyebrow">Professional background</div>
+                    <h2>Experience</h2>
+                    <div class="timeline">
+                        <div class="entry"><strong>IT Technician / HMIS Officer</strong><small>Ministry of
+                                Health, Sierra Leone · Jul 2021 – Sep 2023</small>
+                            <p class="muted">Supported Windows endpoints, networking, health information
+                                systems, technical incidents, and end-user training.</p>
+                        </div>
+                        <div class="entry"><strong>Tech Officer (Part-Time)</strong><small>Phazel Solutions
+                                · Feb 2020 – Sep 2022</small>
+                            <p class="muted">Installed and troubleshot computers, CCTV, routers, GPS
+                                devices, and on-site networking equipment.</p>
+                        </div>
+                        <div class="entry"><strong>Direct Support Professional</strong><small>Woods Services
+                                · Dates to confirm</small>
+                            <p class="muted">Maintain accurate incident documentation, follow operational
+                                procedures, and coordinate with teams in high-responsibility environments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="eyebrow">Learning</div>
+                    <h2>Education & credentials</h2>
+                    <div class="card"><strong>BSc (Hons), Computer Science</strong>
+                        <p>Njala University</p><strong>Cloud Computing Certificate</strong>
+                        <p>DeVry University · Completed September 2026</p>
+                        Certificate (With Honors)</strong>
+                        <p>DeVry University</p><strong>Microsoft IT Support Specialist Professional
+                            Certificate</strong>
+                        <p>Microsoft / Coursera</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="resumes">
+            <div class="container">
+                <div class="eyebrow">Career tracks</div>
+                <h2>Role-specific resumes</h2>
+                <p class="lead">Each version emphasizes relevant skills and projects. Download the version
+                    that matches the job description.</p>
+                <div class="resumes"><a class="resume" href="Joseph_Sesay_Cloud_Support_ATS.docx" download>↧
+                        Cloud Support / Junior Cloud Engineer</a><a class="resume"
+                        href="Joseph_Sesay_Junior_DevOps_ATS.docx" download>↧ Junior DevOps Engineer</a><a
+                        class="resume" href="Joseph_Sesay_Linux_Systems_ATS.docx" download>↧ Linux / Systems
+                        Administrator</a><a class="resume" href="Joseph_Sesay_IT_Support_Data_Center_ATS.docx"
+                        download>↧ IT Support / Data
+                        Center Technician</a></div>
+            </div>
+        </section>
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="eyebrow">Let's connect</div>
+                <h2>Ready to solve the next challenge.</h2>
+                <p class="lead">Interested in working together or discussing an IT, cloud, or infrastructure
+                    opportunity?</p>
+                <div class="contact"><a href="mailto:jsesay113@gmail.com">jsesay113@gmail.com</a><a
+                        href="https://www.linkedin.com/in/joseph-sesay/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn ↗<a href="https://github.com/jsaidus" target="_blank"
+                            rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+<script>
+const projects = [
+  [
+    'Two-VM DevOps CI/CD Deployment',
+    'Configured two Ubuntu VMs, an admin server and Nginx deployment server, with GitHub Actions CI/CD. Troubleshot host-only networking, Git identity, token permissions, and deployment targets.',
+    ['Ubuntu', 'GitHub Actions', 'Nginx', 'Git', 'CI/CD'],
+    'https://github.com/jsaidus/nginx-web-server'
+  ],
+  [
+    'AWS S3 + CloudFront Website',
+    'Deployed static website hosting with Amazon S3 and CloudFront; configured bucket access, CDN caching, and invalidation, and troubleshot deployment issues.',
+    ['AWS S3', 'CloudFront', 'CDN'],
+    'https://github.com/jsaidus/AWS-CloudFront-S3-Static-Website'
+  ],
+  [
+    'Linux Server Administration',
+    'Configured Ubuntu Server in VirtualBox, connected over SSH, managed files and permissions, and practiced remote troubleshooting.',
+    ['Ubuntu', 'SSH', 'VirtualBox', 'Linux'],
+    null
+  ],
+  [
+    'AWS VPC Networking',
+    'Practiced AWS virtual networking concepts including subnets, route tables, and security controls in a hands-on lab.',
+    ['AWS VPC', 'Networking', 'Security'],
+    'https://github.com/jsaidus/AWS-VPC-Network-Architecture-Lab'
+  ],
+  [
+    'Terraform AWS Lab',
+    'Used Terraform and HCL with AWS CLI and IAM credentials to practice infrastructure-as-code configuration and AWS account data lookup.',
+    ['Terraform', 'HCL', 'AWS CLI', 'IAM'],
+    null
+  ],
+  [
+    'Amazon ElastiCache Serverless',
+    'Configured an Amazon ElastiCache Serverless cache using the Valkey engine and explored encryption, networking, and managed caching.',
+    ['ElastiCache', 'Valkey', 'AWS'],
+    'https://github.com/jsaidus/AWS-ElastiCache-Project'
+  ],
+  [
+    'CloudOps Sentinel',
+    'Completed an AWS serverless cloud-operations lab covering monitoring and troubleshooting concepts. Detailed implementation documentation is being prepared.',
+    ['AWS', 'Serverless', 'CloudOps'],
+    'https://github.com/jsaidus/CloudOps-Sentinel'
+  ],
+  [
+    'E-Health Application Prototype',
+    'Built a local health services application prototype with subscriber, facility, and administrative workflows using Streamlit and SQLite.',
+    ['Python', 'Streamlit', 'SQLite'],
+    null
+  ]
+];
+
+document.getElementById('project-grid').innerHTML = projects.map((p, i) => `
+  <article class="card">
+    <div class="tag">
+      Project ${String(i + 1).padStart(2, '0')}
     </div>
-</section>
-                    <section class="section" id="experience">
-                        <div class="container split">
-                            <div>
-                                <div class="eyebrow">Professional background</div>
-                                <h2>Experience</h2>
-                                <div class="timeline">
-                                    <div class="entry"><strong>IT Technician / HMIS Officer</strong><small>Ministry of
-                                            Health, Sierra Leone · Jul 2021 – Sep 2023</small>
-                                        <p class="muted">Supported Windows endpoints, networking, health information
-                                            systems, technical incidents, and end-user training.</p>
-                                    </div>
-                                    <div class="entry"><strong>Tech Officer (Part-Time)</strong><small>Phazel Solutions
-                                            · Feb 2020 – Sep 2022</small>
-                                        <p class="muted">Installed and troubleshot computers, CCTV, routers, GPS
-                                            devices, and on-site networking equipment.</p>
-                                    </div>
-                                    <div class="entry"><strong>Direct Support Professional</strong><small>Woods Services
-                                            · Dates to confirm</small>
-                                        <p class="muted">Maintain accurate incident documentation, follow operational
-                                            procedures, and coordinate with teams in high-responsibility environments.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="eyebrow">Learning</div>
-                                <h2>Education & credentials</h2>
-                                <div class="card"><strong>BSc (Hons), Computer Science</strong>
-                                    <p>Njala University</p><strong>Cloud Computing Certificate</strong>
-                                   <p>DeVry University · Completed September 2026</p>
-                                        Certificate (With Honors)</strong>
-                                    <p>DeVry University</p><strong>Microsoft IT Support Specialist Professional
-                                        Certificate</strong>
-                                    <p>Microsoft / Coursera</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="section" id="resumes">
-                        <div class="container">
-                            <div class="eyebrow">Career tracks</div>
-                            <h2>Role-specific resumes</h2>
-                            <p class="lead">Each version emphasizes relevant skills and projects. Download the version
-                                that matches the job description.</p>
-                            <div class="resumes"><a class="resume" href="Joseph_Sesay_Cloud_Support_ATS.docx" download>↧
-                                    Cloud Support / Junior Cloud Engineer</a><a class="resume"
-                                    href="Joseph_Sesay_Junior_DevOps_ATS.docx" download>↧ Junior DevOps Engineer</a><a
-                                    class="resume" href="Joseph_Sesay_Linux_Systems_ATS.docx" download>↧ Linux / Systems
-                                    Administrator</a><a class="resume"
-                                    href="Joseph_Sesay_IT_Support_Data_Center_ATS.docx" download>↧ IT Support / Data
-                                    Center Technician</a></div>
-                        </div>
-                    </section>
-                    <section class="section" id="contact">
-                        <div class="container">
-                            <div class="eyebrow">Let's connect</div>
-                            <h2>Ready to solve the next challenge.</h2>
-                            <p class="lead">Interested in working together or discussing an IT, cloud, or infrastructure
-                                opportunity?</p>
-                            <div class="contact"><a href="mailto:jsesay113@gmail.com">jsesay113@gmail.com</a><a
-                                    href="https://www.linkedin.com/in/joseph-sesay/" target="_blank"
-                                    rel="noopener noreferrer">LinkedIn ↗<a href="https://github.com/jsaidus"
-                                        target="_blank" rel="noopener noreferrer">GitHub</a>
-                                      </div>
-  </div>
-</section>
-</main>
-                                        <script>const projects = [['Two-VM DevOps CI/CD Deployment', 'Configured two Ubuntu VMs, an admin server and Nginx deployment server, with GitHub Actions CI/CD. Troubleshot host-only networking, Git identity, token permissions, and deployment targets.', ['Ubuntu', 'GitHub Actions', 'Nginx', 'Git', 'CI/CD']], ['AWS S3 + CloudFront Website', 'Deployed static website hosting with Amazon S3 and CloudFront; configured bucket access, CDN caching, and invalidation, and troubleshot deployment issues.', ['AWS S3', 'CloudFront', 'CDN']], ['Linux Server Administration', 'Configured Ubuntu Server in VirtualBox, connected over SSH, managed files and permissions, and practiced remote troubleshooting.', ['Ubuntu', 'SSH', 'VirtualBox', 'Linux']], ['AWS VPC Networking', 'Practiced AWS virtual networking concepts including subnets, route tables, and security controls in a hands-on lab.', ['AWS VPC', 'Networking', 'Security']], ['Terraform AWS Lab', 'Used Terraform and HCL with AWS CLI and IAM credentials to practice infrastructure-as-code configuration and AWS account data lookup.', ['Terraform', 'HCL', 'AWS CLI', 'IAM']], ['Amazon ElastiCache Serverless', 'Configured an Amazon ElastiCache Serverless cache using the Valkey engine and explored encryption, networking, and managed caching.', ['ElastiCache', 'Valkey', 'AWS']], ['CloudOps Sentinel', 'Completed an AWS serverless cloud-operations lab covering monitoring and troubleshooting concepts. Detailed implementation documentation is being prepared.', ['AWS', 'Serverless', 'CloudOps']], ['E-Health Application Prototype', 'Built a local health services application prototype with subscriber, facility, and administrative workflows using Streamlit and SQLite.', ['Python', 'Streamlit', 'SQLite']]]; document.getElementById('project-grid').innerHTML = projects.map((p, i) => `<article class="card"><div class="tag">Project ${String(i + 1).padStart(2, '0')}</div><h3>${p[0]}</h3><p>${p[1]}</p><div class="chips">${p[2].map(t => `<span class="chip">${t}</span>`).join('')}</div><span class="muted" style="font-size:12px">Repository link: pending verification</span></article>`).join('');</script>
+    <h3>${p[0]}</h3>
+    <p>${p[1]}</p>
+    <div class="chips">
+      ${p[2].map(t => `<span class="chip">${t}</span>`).join('')}
+    </div>
+    ${
+      p[3]
+        ? `<a href="${p[3]}" target="_blank" rel="noopener noreferrer">View GitHub Repository ↗</a>`
+        : `<span class="muted" style="font-size:12px">Documentation coming soon</span>`
+    }
+  </article>
+`).join('');
+</script>
+
 </body>
 
 </html>
